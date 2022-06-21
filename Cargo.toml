@@ -1,0 +1,7 @@
+[package]
+name = "rubygems-version"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fancy-regex = "0.10.0"
