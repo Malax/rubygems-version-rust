@@ -4,6 +4,16 @@ use std::cmp;
 use std::cmp::Ordering;
 use std::str::FromStr;
 
+/// Example:
+///
+/// ```rust
+/// use std::str::FromStr;
+/// use rubygems_version::Version;
+///
+/// let version = Version::from_str("1.0.0").unwrap();
+/// assert!(version < Version::from_str("2.0.0").unwrap());
+/// ```
+///
 #[derive(Debug)]
 pub struct Version {
     segments: Vec<VersionSegment>,
